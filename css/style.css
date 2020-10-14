@@ -1,0 +1,57 @@
+/* =================================
+  Base Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(80,80,80);
+}
+
+
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name,
+.main-nav li {
+  text-align: center;
+
+
+}
+
+.main-nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.main-nav a:visited {
+  color: none;
+}
+
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  text-align: center;
+  background: whitesmoke;
+
+}
+
+
+
+
+
+
+
+/* =================================
+  Media Queries
+==================================== */
