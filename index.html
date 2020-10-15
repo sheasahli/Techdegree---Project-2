@@ -2,28 +2,28 @@
 <html>
   <head>
     <title>Responsive Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
     <body>
       <header class="main-header">
+        <div class="container">
        <h1 class="name">Student Name</h1>
         <nav>
-          <ul class="main-nav">
             <li><a href="#">Home</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
-          </ul>
         </nav>
-       <img src="images/responsive-layout-profile.png" alt="picture of student">
+       <img class="profile-img" src="images/responsive-layout-profile.png" alt="picture of student">
        <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web developement at Treehouse and am excited to put all my skills to use!</p>
+       </div>
       </header>
 
-      <div class="Portfolio">
+      <div class="container">
         <h3>Portfolio</h3>
-
           <div class="marketing">
             <img src="images/portfolio-1.png" alt="drawing of marketing site">
             <h2>Marketing Page</h2>
@@ -59,15 +59,15 @@
             <h2>Caculator</h2>
               <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
           </div>
-       </div>
+        </div>
 
-      <div class="Contact">
+      <div class="container">
         <h3>Contact</h3>
         <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
 
       </div>
 
-      <footer>
+      <footer class="main-footer">
         <h3>Student Name</h3>
         <a href="#">Back to Top</a>
       </footer>

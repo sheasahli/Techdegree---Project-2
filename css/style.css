@@ -2,55 +2,67 @@
   Base Styles
 ==================================== */
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   color: rgb(80,80,80);
+  line-height: 1.6;
+  font-size: 0.85em;
 }
 
+a:visited {
+ color: rgb(80,80,80);
+}
 
+h1 {
+  font-size: 1.5em;
+}
 
-
+h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 2em 0;
+  font-weight: bolder;
+}
 /* =================================
   Base Layout Styles
 ==================================== */
 
 /* ---- Navigation ---- */
 
-.name,
-.main-nav li {
-  text-align: center;
-
-
+nav li {
+  list-style-type: none;
+  font-weight: bolder;
+  background: #fff;
+  padding: 0.5em 0;
+  margin: 4px 0;
 }
 
-.main-nav a {
+nav a {
   text-decoration: none;
   text-transform: uppercase;
-  display: inline-block;
+  display; block;
 }
-
-.main-nav a:visited {
-  color: none;
-}
-
 
 /* ---- Layout Containers ---- */
 
 .main-header {
-  text-align: center;
   background: whitesmoke;
-
+  width: 100%;
+  padding: 2px 0;
 }
 
+.container {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
 
+/* ---- Layout Styles ---- */
 
-
-
-
+.profile-img {
+  width: 70%;
+  margin-top: 2em;
+}
 
 /* =================================
   Media Queries
