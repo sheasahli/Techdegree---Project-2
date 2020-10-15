@@ -21,6 +21,10 @@ h3 {
   color: black;
 }
 
+p {
+  padding-bottom: 1em;
+}
+
 .imgs {
   width: 100%;
 }
