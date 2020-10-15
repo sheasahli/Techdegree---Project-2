@@ -6,15 +6,11 @@ body {
   font-family: 'Roboto', sans-serif;
   color: rgb(80,80,80);
   line-height: 1.6;
-  font-size: 0.85em;
+  font-size: 0.80em;
 }
 
 a:visited {
- color: rgb(80,80,80);
-}
-
-h1 {
-  font-size: 1.5em;
+ color: rgb(85,85,85);
 }
 
 h3 {
@@ -22,6 +18,11 @@ h3 {
   font-size: 1em;
   padding: 2em 0;
   font-weight: bolder;
+  color: black;
+}
+
+.imgs {
+  width: 100%;
 }
 /* =================================
   Base Layout Styles
@@ -62,6 +63,10 @@ nav a {
 .profile-img {
   width: 70%;
   margin-top: 2em;
+}
+
+.intro {
+  color: rgb(175, 175, 175);
 }
 
 /* =================================
