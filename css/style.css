@@ -9,10 +9,6 @@ body {
   font-size: 0.80em;
 }
 
-a:visited {
- color: rgb(85,85,85);
-}
-
 h3 {
   text-transform: uppercase;
   font-size: 1em;
@@ -48,6 +44,10 @@ nav a {
   display; block;
 }
 
+a:visited {
+ color: rgb(85,85,85);
+}
+
 /* ---- Layout Containers ---- */
 
 .main-header {
@@ -60,6 +60,16 @@ nav a {
   text-align: center;
   width: 90%;
   margin: 0 auto;
+}
+
+.caculator {
+  margin-bottom: 3em;
+}
+
+.main-footer {
+  width: 100%;
+  background: whitesmoke;
+
 }
 
 /* ---- Layout Styles ---- */
