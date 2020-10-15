@@ -3,10 +3,10 @@
 ==================================== */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Signika', sans-serif;
   color: rgb(80,80,80);
   line-height: 1.6;
-  font-size: 0.80em;
+  font-size: 0.95em;
 }
 
 h3 {
@@ -19,29 +19,35 @@ h3 {
 
 p {
   padding-bottom: 1em;
+  color: charcoal;
 }
 
 .imgs {
   width: 100%;
 }
+
 /* =================================
   Base Layout Styles
 ==================================== */
 
 /* ---- Navigation ---- */
 
-nav li {
+.main-nav {
+  padding-left: 0;
+}
+
+.main-nav li {
   list-style-type: none;
   font-weight: bolder;
   background: #fff;
   padding: 0.5em 0;
   margin: 4px 0;
+  display; block;
 }
 
-nav a {
+.main-nav a {
   text-decoration: none;
   text-transform: uppercase;
-  display; block;
 }
 
 a:visited {
@@ -66,9 +72,12 @@ a:visited {
   margin-bottom: 3em;
 }
 
+
 .main-footer {
   width: 100%;
   background: whitesmoke;
+  padding-bottom: 0.5em;
+  border-top: 1px solid lightgrey;
 
 }
 
@@ -81,6 +90,17 @@ a:visited {
 
 .intro {
   color: rgb(175, 175, 175);
+}
+
+.info {
+  list-style-type: none;
+  padding-left: 0;
+  font-weight: lighter;
+}
+
+.main-footer a {
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 /* =================================
