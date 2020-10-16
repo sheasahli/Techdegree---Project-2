@@ -18,12 +18,7 @@ h3 {
 }
 
 p {
-  padding-bottom: 1em;
-  color: charcoal;
-}
-
-.imgs {
-  width: 100%;
+  margin-bottom: 2em;
 }
 
 /* =================================
@@ -42,7 +37,6 @@ p {
   background: #fff;
   padding: 0.5em 0;
   margin: 4px 0;
-  display; block;
 }
 
 .main-nav a {
@@ -78,7 +72,7 @@ a:visited {
   padding: 1px 0;
 }
 
-.card {
+.contact {
   text-align: center;
   width: 90%;
   margin: 0 auto;
@@ -123,6 +117,10 @@ a:visited {
   padding-bottom: 2em;
 }
 
+.imgs {
+  width: 100%;
+}
+
 .address {
   list-style-type: none;
   padding-left: 0;
@@ -144,16 +142,28 @@ a:visited {
 
 @media (min-width: 768px) {
 
+/*----- Navigation ---------*/
   .main-nav li {
-    float: both;
-    display: inline;
-    text-align: center;
+    display: inline-block;
     background: none;
     padding: 0 1em;
   }
 
   .profile-img {
-
+    float: right;
+    width: 40%;
+    margin-bottom: 3em;
 
   }
+  .intro {
+    float: left;
+    font-size: 18px;
+    width: 55%;
+    padding-top: 1em;
+    text-align: left;
+  }
+
+/*----- Main Content ---------*/
+
+
 }
