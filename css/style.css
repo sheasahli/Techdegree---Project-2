@@ -66,11 +66,6 @@ a:visited {
   background-color: #fff;
   width: 100%;
 }
-.container {
-  text-align: center;
-  width: 90%;
-  margin: 0 auto;
-}
 
 .caculator {
   margin-bottom: 3em;
@@ -175,6 +170,11 @@ padding: 2px 0 5px;
 
 /*----- Floated Columns ------*/
 
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .col {
     width: 50%;
     float: left;
@@ -235,10 +235,36 @@ padding: 2px 0 5px;
 
 /*----- Floated Columns ------*/
 
+.col {
+  width: 33.3%;
+  margin-top: 1.5em;
+}
+
+.card {
+  width: 95%;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
 
 
 /*-----  Address -------*/
 
+.contact {
+  width: 70%;
+}
+
+.contact p,
+.address {
+  font-size: 1.5em;
+}
+
 /*----- Footer -------*/
+
+.footer-nav {
+  padding-bottom: 0;
+}
 
 }
