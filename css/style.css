@@ -2,11 +2,17 @@
   Base Styles
 ==================================== */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
+  background-color: whitesmoke;
   font-family: 'Signika', sans-serif;
   color: rgb(80,80,80);
   line-height: 1.6;
   font-size: 0.95em;
+  height: 100%
 }
 
 h3 {
@@ -19,6 +25,16 @@ h3 {
 
 p {
   margin-bottom: 2em;
+}
+
+a {
+  color: rgb(80,80,80);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:visited {
+ color: rgb(85,85,85);
 }
 
 /* =================================
@@ -39,23 +55,19 @@ p {
   margin: 4px 0;
 }
 
-.main-nav a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-a:visited {
- color: rgb(85,85,85);
-}
 
 /* ---- Layout Containers ---- */
 
 .main-header {
   background: whitesmoke;
   width: 100%;
-  padding: 2px 0;
+  padding: 1px 0;
 }
 
+.wrapper {
+  background-color: #fff;
+  width: 100%;
+}
 .container {
   text-align: center;
   width: 90%;
@@ -66,43 +78,11 @@ a:visited {
   margin-bottom: 3em;
 }
 
-.wrap {
-  background: whitesmoke;
-  width: 100%;
-  padding: 1px 0;
-}
-
 .contact {
   text-align: center;
   width: 90%;
   margin: 0 auto;
   padding: 1.5em 0;
-}
-
-/* ---- Footer ---- */
-
-.main-footer {
-  width: 100%;
-  background: whitesmoke;
-  padding-bottom: 0.5em;
-  border-top: 1px solid lightgrey;
-}
-
-.main-footer .container {
-  padding: 20px 0 35px;
-}
-
-.main-footer h4 {
-  float: left;
-  margin: 0;
-  font-size: 0.95em;
-}
-
-.main-footer a {
-  float: right;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 0.95em;
 }
 
 /* ---- Layout Styles ---- */
@@ -114,7 +94,6 @@ a:visited {
 
 .intro {
   color: rgb(175, 175, 175);
-  padding-bottom: 2em;
 }
 
 .imgs {
@@ -127,6 +106,39 @@ a:visited {
   font-weight: lighter;
 }
 
+/* ---- Footer ---- */
+
+.main-footer {
+  width: 100%;
+  background: whitesmoke;
+  padding-bottom: 0.5em;
+  border-top: 1px solid lightgrey;
+}
+
+.main-footer,
+.container {
+padding: 2px 0 5px;
+}
+
+.main-footer h4 {
+  float: left;
+  height: 12px;
+  line-height: 12px;
+}
+
+.footer-nav {
+  text-align: right;
+  list-style-type: none;
+}
+
+.top,
+.footer-nav li:last-child {
+  margin-right: 0;
+}
+
+.full {
+  display: none;
+}
 
 /* ---- Clearfix ---- */
 
@@ -140,9 +152,11 @@ a:visited {
   Media Queries
 ==================================== */
 
+/* --------- TABLETS ----------- */
+
 @media (min-width: 768px) {
 
-/*----- Navigation ---------*/
+/*----- Navigation -------*/
   .main-nav li {
     display: inline-block;
     background: none;
@@ -158,12 +172,72 @@ a:visited {
   .intro {
     float: left;
     font-size: 18px;
-    width: 55%;
+    width: 60%;
     padding-top: 1em;
     text-align: left;
   }
 
-/*----- Main Content ---------*/
+/*----- Floated Columns ------*/
 
+  .col {
+    width: 50%;
+    float: left;
+    padding: 0 0.5em;
+  }
+
+/*-----  Address -------*/
+
+  .address,
+  .contact p {
+    font-size: 20px;
+    padding: 0 3em;
+  }
+
+/*----- Footer -------*/
+
+.footer-nav {
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 50px;
+}
+
+.top {
+  display: none;
+}
+
+.full {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+}
+
+/* -------- DESKTOP -------- */
+
+@media (min-width: 1024px) {
+
+/*----- Navigation -------*/
+
+.name {
+  float: left;
+  border: 2px solid red;
+}
+
+.main-nav {
+  float: right;
+  border: 2px solid red;
+}
+
+.profile-img {
+    border: 2px solid red;
+}
+
+/*----- Floated Columns ------*/
+
+
+
+/*-----  Address -------*/
+
+/*----- Footer -------*/
 
 }
