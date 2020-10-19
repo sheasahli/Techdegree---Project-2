@@ -226,8 +226,12 @@ padding: 2px 0 5px;
 .intro {
   font-size: 1.5em;
   width: 55%;
+  margin-top: 15px;
 }
 
+.banner {
+  padding-bottom: 1em;
+}
 
 /*----- Floated Columns ------*/
 
