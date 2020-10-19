@@ -12,7 +12,8 @@ body {
   color: rgb(80,80,80);
   line-height: 1.6;
   font-size: 0.95em;
-  height: 100%
+  height: 100%;
+  text-align: center;
 }
 
 h3 {
@@ -55,14 +56,11 @@ a:visited {
   margin: 4px 0;
 }
 
+.banner {
+  padding-top: 1em;
+}
 
 /* ---- Layout Containers ---- */
-
-.main-header {
-  background: whitesmoke;
-  width: 100%;
-  padding: 1px 0;
-}
 
 .wrapper {
   background-color: #fff;
@@ -89,7 +87,6 @@ a:visited {
 
 .profile-img {
   width: 70%;
-  margin-top: 2em;
 }
 
 .intro {
@@ -109,9 +106,6 @@ a:visited {
 /* ---- Footer ---- */
 
 .main-footer {
-  width: 100%;
-  background: whitesmoke;
-  padding-bottom: 0.5em;
   border-top: 1px solid lightgrey;
 }
 
@@ -166,15 +160,17 @@ padding: 2px 0 5px;
   .profile-img {
     float: right;
     width: 40%;
-    margin-bottom: 3em;
-
   }
   .intro {
     float: left;
     font-size: 18px;
     width: 60%;
-    padding-top: 1em;
     text-align: left;
+  }
+
+  .intro,
+  .profile-img {
+    margin: 1em 0 3em;
   }
 
 /*----- Floated Columns ------*/
@@ -220,17 +216,18 @@ padding: 2px 0 5px;
 
 .name {
   float: left;
-  border: 2px solid red;
 }
 
 .main-nav {
   float: right;
-  border: 2px solid red;
+  padding-top: 15px;
 }
 
-.profile-img {
-    border: 2px solid red;
+.intro {
+  font-size: 1.5em;
+  width: 55%;
 }
+
 
 /*----- Floated Columns ------*/
 
