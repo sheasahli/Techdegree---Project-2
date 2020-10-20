@@ -7,9 +7,9 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: dimgray;
   font-family: 'Signika', sans-serif;
-  color: rgb(80,80,80);
+  color: #fff;
   line-height: 1.6;
   font-size: 0.95em;
   height: 100%;
@@ -21,7 +21,6 @@ h3 {
   font-size: 1em;
   padding: 1.5em 0;
   font-weight: bolder;
-  color: black;
 }
 
 p {
@@ -29,13 +28,12 @@ p {
 }
 
 a {
-  color: rgb(80,80,80);
   text-decoration: none;
   text-transform: uppercase;
 }
 
 a:visited {
- color: rgb(85,85,85);
+ color: #fff;
 }
 
 /* =================================
@@ -50,8 +48,8 @@ a:visited {
 
 .main-nav li {
   list-style-type: none;
+  border: 1px solid white;
   font-weight: bolder;
-  background: #fff;
   padding: 0.5em 0;
   margin: 4px 0;
 }
@@ -67,6 +65,28 @@ a:visited {
   width: 100%;
 }
 
+/* ---- Layout Styles ---- */
+
+.profile-img {
+  width: 70%;
+}
+
+.intro {
+  color: dodgerblue;
+}
+
+.portfolio {
+    color: rgb(80,80,80);
+}
+
+.imgs {
+  width: 100%;
+}
+
+.col {
+  color: rgb(80,80,80);
+}
+
 .caculator {
   margin-bottom: 3em;
 }
@@ -78,21 +98,9 @@ a:visited {
   padding: 1.5em 0;
 }
 
-/* ---- Layout Styles ---- */
-
-.profile-img {
-  width: 70%;
-}
-
-.intro {
-  color: rgb(175, 175, 175);
-}
-
-.imgs {
-  width: 100%;
-}
 
 .address {
+  color: orange;
   list-style-type: none;
   padding-left: 0;
   font-weight: lighter;
@@ -104,9 +112,9 @@ a:visited {
   border-top: 1px solid lightgrey;
 }
 
-.main-footer,
+footer,
 .container {
-padding: 2px 0 5px;
+padding: 2px 5px 5px;
 }
 
 .main-footer h4 {
@@ -150,6 +158,7 @@ padding: 2px 0 5px;
     display: inline-block;
     background: none;
     padding: 0 1em;
+    margin: 0 1em;
   }
 
   .profile-img {
@@ -204,6 +213,14 @@ padding: 2px 0 5px;
 .full {
   display: inline-block;
   margin-right: 30px;
+}
+
+.main-footer {
+  border: none;
+}
+
+.wrap {
+  border-top: 1px solid lightgrey;
 }
 
 }
