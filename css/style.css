@@ -57,6 +57,7 @@ a:visited {
 
 .banner {
   padding-top: 1em;
+  position: relative;
 }
 
 /* ---- Layout Containers ---- */
@@ -74,12 +75,20 @@ a:visited {
 
 .intro {
   color: dodgerblue;
+  margin-bottom: 0;
 }
+
 
 .skillset {
   font-size: 1.25em;
   list-style-type: none;
   padding-left: 0;
+  padding-bottom: 1em;
+}
+
+.skillset li {
+  padding-bottom: 5px;
+  color: gold;
 }
 
 .portfolio {
@@ -168,6 +177,8 @@ padding: 2px 5px 5px;
     margin: 0 1em;
   }
 
+  /*----- Floated Columns ------*/
+
   .profile-img {
     float: right;
     width: 40%;
@@ -175,21 +186,25 @@ padding: 2px 5px 5px;
   .intro {
     float: left;
     font-size: 18px;
-    width: 60%;
+    width: 58%;
     text-align: left;
   }
 
   .intro,
   .profile-img {
-    margin: 1em 0 3em;
+    margin: 1em 0 5em;
   }
 
-/*----- Floated Columns ------*/
+.skills {
+  position: absolute;
+  width: 60%;
+  bottom: -10px;
+}
 
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
+.skillset li {
+  display: inline-block;
+  padding: 0 10px;
+}
 
   .col {
     width: 50%;
@@ -197,6 +212,10 @@ padding: 2px 5px 5px;
     padding: 0 0.5em;
   }
 
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
 /*-----  Address -------*/
 
   .address,
@@ -253,8 +272,23 @@ padding: 2px 5px 5px;
   margin-top: 15px;
 }
 
-.banner {
-  padding-bottom: 1em;
+.skills {
+  text-align: left;
+  left: 30px;
+  bottom: 35px;
+}
+
+.skills-header {
+  margin-bottom: 1px;
+}
+
+.skillset {
+  margin-top: 5px;
+}
+
+.skillset li {
+  padding-left: 0;
+  padding-right: 35px;
 }
 
 /*----- Floated Columns ------*/
