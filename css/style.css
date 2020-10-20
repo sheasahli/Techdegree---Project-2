@@ -255,6 +255,11 @@ padding: 2px 5px 5px;
 
 @media (min-width: 1024px) {
 
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /*----- Navigation -------*/
 
 .name {
@@ -299,7 +304,7 @@ padding: 2px 5px 5px;
 }
 
 .card {
-  width: 95%;
+  width: 90%;
 }
 
 .wrapper {
